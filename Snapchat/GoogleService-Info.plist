@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>417557269433-6s0svlle9rc1annugudlsm8ttjf9jdfq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.417557269433-6s0svlle9rc1annugudlsm8ttjf9jdfq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBAgePG89GCdIuql2skMrdBQYwPYxSrxyY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>417557269433</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mvillanueva24.com.Snapchat</string>
+	<key>PROJECT_ID</key>
+	<string>snapchat-365ae</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snapchat-365ae.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:417557269433:ios:8b9910b8d74a513f0b0468</string>
+</dict>
+</plist>
