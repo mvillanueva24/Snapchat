@@ -63,6 +63,19 @@
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6q9-co-dRU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-Nl-8sz">
+                                <rect key="frame" x="107" y="494.5" width="200" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="g4U-Ub-XvE"/>
+                                </constraints>
+                                <state key="normal" title="Google SignIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoogleSignin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mm3-Ka-NX0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -76,9 +89,11 @@
                             <constraint firstItem="X90-YQ-RIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgK-Qb-83g"/>
                             <constraint firstItem="jaX-cY-XX6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcm-g0-dcE"/>
                             <constraint firstItem="X90-YQ-RIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gan-W5-Rfd"/>
+                            <constraint firstItem="sEc-Nl-8sz" firstAttribute="top" secondItem="X90-YQ-RIJ" secondAttribute="bottom" constant="20" id="hVP-Ma-3Vj"/>
                             <constraint firstItem="jaX-cY-XX6" firstAttribute="top" secondItem="BDd-EB-tpQ" secondAttribute="bottom" constant="25" id="mNv-mq-Rd2"/>
                             <constraint firstItem="PhA-zQ-C1E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rRj-I5-Y2n"/>
                             <constraint firstItem="X90-YQ-RIJ" firstAttribute="top" secondItem="jaX-cY-XX6" secondAttribute="bottom" constant="30" id="vLZ-rb-Us9"/>
+                            <constraint firstItem="sEc-Nl-8sz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYj-yQ-5ss"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
