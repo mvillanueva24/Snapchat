@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
+import FirebaseDatabase
 
 class iniciarSesionViewController: UIViewController {
 
@@ -25,14 +26,24 @@ class iniciarSesionViewController: UIViewController {
     }
     
     @IBAction func iniciarSesionTapped(_ sender: Any) {
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) {
-            (user, error) in
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) {(user, error) in
             print("Intentando Iniciar Sesion")
-            if let error = error{
+            if error != nil {
                 print("Se presento el siguiente error: \(error)")
+                let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario \(self.emailTextField.text!) no esta registrado", preferredStyle: .alert)
+                let btnCrear = UIAlertAction(title: "Crear", style: .default, handler: {(UIAlertAction) in
+                    self.performSegue(withIdentifier: "registerSegue", sender: nil)
+                })
+                let btnCancel = UIAlertAction(title: "Cancel", style: .default, handler: {(UIAlertAction) in
+                })
+                alerta.addAction(btnCrear)
+                alerta.addAction(btnCancel)
+                self.present(alerta, animated: true, completion: nil)
+
             }
             else{
                 print("Inicio de sesion exitoso")
+                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }
         }
     }
@@ -41,6 +52,9 @@ class iniciarSesionViewController: UIViewController {
         GIDSignIn.sharedInstance()?.signIn()
     }
 
+    @IBAction func crearUsuarioTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "registerSegue", sender: nil)
+    }
 }
 
 extension iniciarSesionViewController: GIDSignInDelegate{
